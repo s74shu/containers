@@ -34,4 +34,5 @@ spec:
             - --skip-nodes-with-local-storage=false
             - --nodes=1:10:k8s-worker-asg-1
           imagePullPolicy: "Always"
-
+          securityContext:
+            allowPrivilegeEscalation: false
